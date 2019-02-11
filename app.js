@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+require("dotenv").config();
 
 app.use(express.static(__dirname + "/public"));
 
@@ -11,6 +12,4 @@ app.get("/prints", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/prints.html");
 });
 
-app.listen(8080, () => {
-  console.log("Server Listening on Port: 8080");
-});
+app.listen(process.env.PORT || 8080);
