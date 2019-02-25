@@ -36,4 +36,12 @@ app.get("/admin/pages/prints", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/prints.html");
 });
 
+app.post("/admin/register", (req, res) => {
+  res.send("Registration Failed");
+});
+
+app.post("/admin/login", (req, res) => {
+  res.send("Login Failed");
+});
+
 app.listen(process.env.PORT || 8080);
