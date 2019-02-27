@@ -20,6 +20,10 @@ app.get("/admin/register", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/admin-register.html");
 });
 
+app.get("/admin/pages", (req, res) => {
+  res.redirect("/admin/pages/home");
+});
+
 app.get("/admin/pages/home", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/index.html");
 });
