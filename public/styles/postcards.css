@@ -6,8 +6,8 @@
 }
 
 .postcard{
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   background-color: purple;
   margin: 2rem;
 }
@@ -15,4 +15,30 @@
 .postcard:hover{
   background-color: pink;
   cursor: pointer;
+}
+
+#card-demo{
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 0;
+  background-color: #00000099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#dc-main{
+  background-color: yellow;
+  width: 30rem;
+  height: 35rem;
+  display: flex;
+  flex-flow: nowrap column;
+}
+
+#dc-main div{
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
 }
