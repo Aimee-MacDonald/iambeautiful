@@ -6,10 +6,13 @@ body{
 }
 
 header{
+  position: fixed;
+  width: 100%;
   background-color: purple;
   display: flex;
   flex-flow: wrap row;
   justify-content: space-between;
+  box-shadow: 0 0.5rem 1rem 0 #333333;
 }
 
 header #header{
@@ -26,6 +29,7 @@ header nav{
   flex-flow: nowrap row;
   justify-content: space-between;
   align-items: center;
+  padding: 0.2rem;
 }
 
 header nav a{
@@ -38,6 +42,7 @@ header nav a{
   text-decoration: none;
   font-size: 16pt;
   font-weight: bold;
+  border-radius: 0.2rem;
 }
 
 header nav a:hover{
