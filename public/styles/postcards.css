@@ -1,0 +1,18 @@
+#postcards{
+  max-width: 60rem;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+
+.postcard{
+  width: 10rem;
+  height: 10rem;
+  background-color: purple;
+  margin: 2rem;
+}
+
+.postcard:hover{
+  background-color: pink;
+  cursor: pointer;
+}
