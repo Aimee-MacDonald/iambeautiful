@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+}
+
+header{
+  background-color: purple;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+
+header #header{
+  color: pink;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 32pt;
+  margin: 0.5rem;
+}
+
+header nav{
+  width: 50%;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a{
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+header nav a:hover{
+  background-color: pink;
+}

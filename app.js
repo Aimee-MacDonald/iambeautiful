@@ -5,7 +5,7 @@ require("dotenv").config();
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
-  res.status(200).sendFile(__dirname + "/public/views/index.html");
+  res.status(200).sendFile(__dirname + "/public/views/holding.html");
 });
 
 app.get("/admin", (req, res) => {
