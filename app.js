@@ -20,6 +20,14 @@ app.get("/admin/register", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/admin-register.html");
 });
 
+app.post("/admin/register", (req, res) => {
+  res.send("Registration Failed");
+});
+
+app.post("/admin/login", (req, res) => {
+  res.send("Login Failed");
+});
+
 app.get("/admin/pages", (req, res) => {
   res.redirect("/admin/pages/home");
 });
@@ -40,12 +48,8 @@ app.get("/admin/pages/prints", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/prints.html");
 });
 
-app.post("/admin/register", (req, res) => {
-  res.send("Registration Failed");
-});
-
-app.post("/admin/login", (req, res) => {
-  res.send("Login Failed");
+app.get("/admin/pages/cart", (req, res) => {
+  res.status(200).sendFile(__dirname + "/public/views/cart.html");
 });
 
 app.listen(process.env.PORT || 8080);

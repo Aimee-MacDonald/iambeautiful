@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/cart.css">
+    <title>I Am Beautiful - Cart</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="/admin/pages/home" id="header">I Am Beautiful</a>
+      <nav>
+        <a href="/admin/pages/postcards">Postcards</a>
+        <a href="/admin/pages/prints">Prints</a>
+        <a href="/admin/pages/blog">Blog</a>
+        <a href="/admin/pages/cart">Cart</a>
+      </nav>
+    </header>
+
+    <div class="page-content">
+      <div class="panel" id="checkout-panel">
+        <table id="checkout-items">
+          <tr>
+            <td class="checkout-heading">Item</td>
+            <td class="checkout-heading">Cost</td>
+            <td class="checkout-heading">Quantity</td>
+            <td class="checkout-heading">Total</td>
+          </tr>
+          <tr class="odd"><td>j</td><td></td><td></td><td></td></tr>
+          <tr class="even"><td>j</td><td></td><td></td><td></td></tr>
+          <tr class="odd"><td>j</td><td></td><td></td><td></td></tr>
+          <tr class="even"><td>j</td><td></td><td></td><td></td></tr>
+          <tr class="odd"><td>j</td><td></td><td></td><td></td></tr>
+          <tr class="even"><td>j</td><td></td><td></td><td></td></tr>
+          <tr class="odd"><td>j</td><td></td><td></td><td></td></tr>
+          <tr class="even"><td>j</td><td></td><td></td><td></td></tr>
+        </table>
+
+        <button onclick="showAddress()">Shipping</button>
+      </div>
+
+      <div class="panel" id="shipping-panel">
+        <div>
+          <label for="in_name">Name:</label>
+          <input type="text" id="in_name" placeholder="Name">
+        </div>
+
+        <div>
+          <label for="in_number">House Number or Name:</label>
+          <input type="text" id="in_number" placeholder="Number">
+        </div>
+
+        <div>
+          <label for="in_street">Street Name:</label>
+          <input type="text" id="in_street" placeholder="Street">
+        </div>
+
+        <div>
+          <label for="in_city">City:</label>
+          <input type="text" id="in_city" placeholder="City">
+        </div>
+
+        <div>
+          <label for="in_region">Region:</label>
+          <input type="text" id="in_region" placeholder="Region">
+        </div>
+
+        <div>
+          <label for="in_country">Country:</label>
+          <input type="text" id="in_country" placeholder="Country">
+        </div>
+
+        <div>
+          <label for="in_postcode">Postcode:</label>
+          <input type="text" id="in_postcode" placeholder="Postcode">
+        </div>
+
+        <button>Payment</button>
+      </div>
+
+      <div class="panel">
+        Payment
+      </div>
+    </div>
+  </body>
+
+  <script src="/scripts/cart.js" charset="utf-8"></script>
+</html>
