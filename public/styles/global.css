@@ -6,17 +6,17 @@ body{
 }
 
 header{
+  color: purple;
   position: fixed;
   width: 100%;
-  background-color: purple;
+  background-color: transparent;
   display: flex;
   flex-flow: wrap row;
   justify-content: space-between;
-  box-shadow: 0 0.5rem 1rem 0 #333333;
+  text-shadow: 1px 1px blue;
 }
 
 header #header{
-  color: pink;
   font-weight: bolder;
   text-decoration: none;
   font-size: 32pt;
@@ -33,7 +33,6 @@ header nav{
 }
 
 header nav a{
-  color: black;
   width: 100%;
   height: 100%;
   display: flex;
