@@ -28,6 +28,10 @@ app.post("/admin/login", (req, res) => {
   res.send("Login Failed");
 });
 
+app.get("/admin/index", (req, res) => {
+  res.status(200).sendFile(__dirname + "/public/views/tempindex.html");
+});
+
 app.get("/admin/pages", (req, res) => {
   res.redirect("/admin/pages/home");
 });
