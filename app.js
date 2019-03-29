@@ -9,9 +9,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/admin", (req, res) => {
-  res.redirect("/admin/register");
+  res.redirect("/admin/pages");
 });
 
+/*
 app.get("/admin/login", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/admin-login.html");
 });
@@ -31,11 +32,13 @@ app.post("/admin/login", (req, res) => {
 app.get("/admin/index", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/tempindex.html");
 });
+*/
 
 app.get("/admin/pages", (req, res) => {
-  res.redirect("/admin/pages/home");
+  res.status(200).sendFile(__dirname + "/public/views/tempindex.html");
 });
 
+/*
 app.get("/admin/pages/home", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/index.html");
 });
@@ -55,5 +58,5 @@ app.get("/admin/pages/prints", (req, res) => {
 app.get("/admin/pages/cart", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/views/cart.html");
 });
-
+*/
 app.listen(process.env.PORT || 8080);
