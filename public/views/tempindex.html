@@ -9,14 +9,18 @@
   </head>
 
   <body>
-    <h1>I Am Beautiful</h1>
-    <ul>
-      <li>Home</li>
-      <li>Blog</li>
-      <li>Portfolio</li>
-    </ul>
+    <div id="main-image"></div>
 
-    <p>This is an introduction about the project</p>
+    <nav>
+      <h1>I Am Beautiful</h1>
+      <ul>
+        <li>Home</li>
+        <li>Blog</li>
+        <li>Portfolio</li>
+      </ul>
+    </nav>
+
+    <p id="intro">This is an introduction about the project</p>
 
     <h1>Postcards</h1>
     <div id="postcards">
@@ -43,17 +47,21 @@
 
     <h1>Sign up for our newsletter</h1>
     <form action="/signup" method="post">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" placeholder="Susan">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Susan">
 
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" placeholder="susan@mail.com">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="susan@mail.com">
+      </div>
 
-      <p>Agree to our terms of service</p>
-      <label for="agreed">I Agree</label>
-      <input type="checkbox" name="agreed" id="agreed">
+      <div>
+        <p>Agree to our terms of service</p>
+        <label for="agreed">I Agree</label>
+        <input type="checkbox" name="agreed" id="agreed">
 
-      <button type="submit">Sign Up</button>
+        <button type="submit">Sign Up</button>
+      </div>
     </form>
   </body>
 </html>
