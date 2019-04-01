@@ -78,6 +78,7 @@ nav ul li:hover .underline{
   width: 20rem;
   height: 15rem;
   margin: 1rem;
+  box-shadow: 0 1rem 1rem 0 #666666;
 }
 
 .postcard h3{
@@ -105,9 +106,12 @@ nav ul li:hover .underline{
 
 .print{
   background-image: url("../images/placeholder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 20rem;
   height: 15rem;
-  margin: 0.5rem
+  margin: 0.5rem;
+  box-shadow: 0 1rem 1rem 0 #666666;
 }
 
 #nl-heading{
