@@ -1,6 +1,21 @@
 body{
-  background-color: pink;
   margin: 0;
+  background-color: black;
+  color: lime;
+}
+
+h1{
+  font-size: 32pt;
+  text-align: center;
+  margin-top: 30vh;
+}
+
+h2{
+  text-align: center;
+  font-size: 24pt;
+  margin-top: 15vh;
+  background-color: black;
+  color: purple;
 }
 
 #main-image{
@@ -11,6 +26,11 @@ body{
   height: 150vh;
   position: absolute;
   z-index: -1;
+}
+
+nav{
+  display: flex;
+  flex-flow: nowrap column-reverse;
 }
 
 nav ul{
@@ -44,7 +64,7 @@ nav ul li:hover .underline{
 }
 
 #postcards{
-  background-color: red;
+  background-color: black;
   display: flex;
   flex-flow: wrap row;
   justify-content: space-around;
@@ -61,7 +81,7 @@ nav ul li:hover .underline{
   margin: 1rem;
 }
 
-.postcard h2{
+.postcard h3{
   width: 100%;
   height: 100%;
   margin: 0;
@@ -71,12 +91,12 @@ nav ul li:hover .underline{
   align-items: center;
 }
 
-.postcard:hover h2{
+.postcard:hover h3{
   background-color: #555555;
 }
 
 #prints{
-  background-color: green;
+  background-color: black;
   display: flex;
   flex-flow: wrap row;
   justify-content: space-around;
